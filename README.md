@@ -3,7 +3,9 @@ Function to visualize the XGBoost explainer in Python.
 
 The XGBoost explainer in Python is cloned from: https://github.com/gameofdimension/xgboost_explainer and combined with my plotting code.
 
-# Usage
+The function will plot the contribution of each variable to the final prediction in the order of absolute contribution.
+
+### Usage
 
 ```python
 # import
@@ -22,6 +24,8 @@ sample = xgb.DMatrix(...)
 # plot contribution
 plot_contribution(xgb_trained, sample, features)
 ```
+
+### Example
 
 The output plot will look like the following:
 
